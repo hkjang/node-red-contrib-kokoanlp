@@ -1,5 +1,5 @@
 const Kokoa = require('kokoanlp');
-const kokoa = Kokoa.load('./data/kokoa.*.csv');
+const kokoa = Kokoa.load(__dirname+'/data/kokoa.*.csv');
 
 module.exports = function (RED) {
   function kokoanlp(config) {
