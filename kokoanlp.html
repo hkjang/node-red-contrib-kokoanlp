@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('kokoanlp',{
+        category: 'function',
+        color: '#DEBD5C',
+        defaults: {
+            name: {value: "sentence to words"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "kokoanlp.png",
+        label: function() {
+            return this.name || "sentence to words";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="kokoanlp">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="kokoanlp">
+    <p>Sentence is saved in the <b>msg.payload</b>, overriding words. </p>
+</script>
